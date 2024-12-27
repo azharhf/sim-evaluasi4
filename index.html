@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpustakaan SMANSARA</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <!-- Navbar Brand dan Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+          Perpustakaan SMA Negeri 1 Jepara
+        </a>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#pendaftaran">Pendaftaran Anggota</a></li>
+                <li><a class="dropdown-item" href="#informasi">Informasi Layanan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#koleksi">Koleksi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center bg-primary text-white py-5">
+      <h1 class="display-4">Selamat Datang</h1>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+      <h2 class="text-center mb-4">Tentang Kami</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="img/lobby_smansara.jpg" alt="Tentang Perpustakaan" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6">
+          <p>
+            Perpustakaan sekolah kami berdedikasi untuk meningkatkan budaya literasi di kalangan siswa. Dengan koleksi buku yang beragam, kami menyediakan lingkungan yang kondusif untuk belajar dan menumbuhkan rasa cinta terhadap membaca.
+          </p>
+          <p>Kami percaya bahwa buku adalah jendela dunia. Oleh karena itu, perpustakaan ini tidak hanya menjadi tempat membaca, tetapi juga pusat pembelajaran yang inovatif dan menyenangkan bagi semua siswa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pendaftaran Anggota Section -->
+    <section id="pendaftaran" class="container my-5">
+      <h2 class="text-center mb-4">Pendaftaran Anggota</h2>
+      <form id="pendaftaranForm">
+        <div class="mb-3">
+          <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control" id="namaLengkap" name="namaLengkap" placeholder="Masukkan nama lengkap" required />
+        </div>
+        <div class="mb-3">
+          <label for="kelas" class="form-label">Kelas</label>
+          <input type="text" class="form-control" id="kelas" name="kelas" placeholder="Masukkan kelas" required />
+        </div>
+        <div class="mb-3">
+          <label for="nis" class="form-label">Nomor Induk Siswa (NIS)</label>
+          <input type="text" class="form-control" id="nis" name="nis" placeholder="Masukkan NIS" required />
+        </div>
+        <div class="mb-3">
+          <label for="alamat" class="form-label">Alamat</label>
+          <textarea class="form-control" id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="nomorTelepon" class="form-label">Nomor Telepon</label>
+          <input type="text" class="form-control" id="nomorTelepon" name="nomorTelepon" placeholder="Masukkan nomor telepon" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Daftar</button>
+      </form>
+    </section>
+
+    <!-- Informasi Layanan Section with Cards -->
+    <section id="informasi" class="container my-5">
+      <h2 class="text-center mb-4">Informasi Layanan Perpustakaan</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card info-card p-3 text-center">
+            <div class="card-icon">
+              <i class="bi bi-book"></i>
+            </div>
+            <h5 class="card-title">Peminjaman Buku</h5>
+            <p class="card-text">Layanan peminjaman buku dengan durasi 7 hari. Pastikan buku dikembalikan tepat waktu untuk menghindari denda.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card info-card p-3 text-center">
+            <div class="card-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h5 class="card-title">Keanggotaan</h5>
+            <p class="card-text">Daftarkan diri Anda sebagai anggota perpustakaan dan nikmati berbagai manfaat yang tersedia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="koleksi" class="container my-5">
+      <h2 class="text-center mb-4">Koleksi Buku</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/atomic_habits.jpg" class="card-img-top" alt="Buku 1" />
+            <div class="card-body">
+              <h5 class="card-title">Atomic Habits</h5>
+              <div class="row">
+                <div class="col-4">
+                  <p>Penulis :</p>
+                  <p>Penerbit :</p>
+                  <p>Tahun Terbit :</p>
+                  <p>Sinopsis :</p>
+                </div>
+                <div class="col-8">
+                  <p>James Clear</p>
+                  <p>Penguin Random House</p>
+                  <p>2018</p>
+                  <p style="text-align: justify">Buku ini memberikan panduan praktis untuk membangun kebiasaan baik dan menghilangkan kebiasaan buruk, dengan pendekatan ilmiah dan contoh-contoh nyata.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/filsafat_moral.jpg" class="card-img-top" alt="Buku 2" />
+            <div class="card-body">
+              <h5 class="card-title">Filsafat Moral</h5>
+              <div class="row">
+                <div class="col-4">
+                  <p>Penulis :</p>
+                  <p>Penerbit :</p>
+                  <p>Tahun Terbit :</p>
+                  <p>Sinopsis :</p>
+                </div>
+                <div class="col-8">
+                  <p>Fachruddin Faiz</p>
+                  <p>Buku Mojok</p>
+                  <p>2019</p>
+                  <p style="text-align: justify">Buku ini membahas berbagai teori filsafat moral, mulai dari etika normatif hingga kritik terhadap pendekatan moral tradisional, dengan gaya bahasa yang ringan dan mudah dipahami.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/filosofi_teras.jpg" class="card-img-top" alt="Buku 3" />
+            <div class="card-body">
+              <h5 class="card-title">Filosofi Teras</h5>
+              <div class="row">
+                <div class="col-4">
+                  <p>Penulis :</p>
+                  <p>Penerbit :</p>
+                  <p>Tahun Terbit :</p>
+                  <p>Sinopsis :</p>
+                </div>
+                <div class="col-8">
+                  <p>Henry Manampiring</p>
+                  <p>Kompas Gramedia</p>
+                  <p>2018</p>
+                  <p style="text-align: justify">Buku ini memperkenalkan filosofi Stoicisme sebagai cara untuk mengelola emosi, menghadapi tantangan hidup, dan menemukan kedamaian batin di tengah dunia modern.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Pesan Konfirmasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Pendaftaran berhasil!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-1">Alamat: Jl. C.S. Tubun 1, Demaan VIII, Demaan, Kec. Jepara, Kabupaten Jepara, Jawa Tengah 59419</p>
+      <p class="mb-1">Contact: (021) 123-4567</p>
+      <p>Sosial Media: <a href="#" class="text-white">Facebook</a> | <a href="#" class="text-white">Instagram</a> | <a href="#" class="text-white">Twitter</a></p>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbz90x0WbMRWYtHLwCqgc3XyXXPM9tklaRLPKOYtj_Cyr0YW8wJk5Q40BYXkayP0gzOeKA/exec";
+      const form = document.getElementById("pendaftaranForm"); // Mengambil form berdasarkan id
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Mencegah reload halaman setelah submit
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            // Memunculkan modal setelah pengiriman berhasil
+            const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+            successModal.show();
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+          });
+      });
+    </script>
+  </body>
+</html>

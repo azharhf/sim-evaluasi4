@@ -1,0 +1,154 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar customization */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 99999;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.nav-link {
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: linear-gradient(to right, #6a11cb, #2575fc, #00d2ff);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* About Section */
+#about img {
+  width: 40%;
+  max-width: 400px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Form styling */
+form {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Informasi Layanan Card */
+.info-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.info-card .card-icon {
+  font-size: 40px;
+  color: #007bff;
+}
+
+.info-card .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.info-card .card-text {
+  font-size: 14px;
+  color: #555;
+  text-align: justify;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Koleksi Buku */
+.card img {
+  margin: 20px auto 10px auto;
+  display: block;
+  width: 50%;
+  height: auto;
+  max-height: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.card-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #343a40;
+  color: white;
+  font-size: 14px;
+}
+
+footer a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
